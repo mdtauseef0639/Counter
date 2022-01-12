@@ -1,12 +1,11 @@
-var p=parseInt(document.getElementById('display').innerText);
+var num=0;
+parseInt(document.getElementById("num").innerText)=num;
 
-function counter(){
-    
-
-    if(p<=0)
+function count() {
+    if(num>=0)
     {
-    p=p+1;
-    return p;
+        num++;
+        document.getElementById("num").innerText=num;
     }
-
+    
 }
